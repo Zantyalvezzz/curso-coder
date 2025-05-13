@@ -1,0 +1,405 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Albert Sans';
+  background-image: url(../assets/general-background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed
+}
+
+header {
+  background-color: rgb(127, 127, 127);
+  padding: 2vw;
+
+}
+
+.logo-principal {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.buscar {
+  display: flex;
+  align-items: flex-start;
+  gap: .625rem;
+}
+
+.searchbar {
+  flex-grow: 1;
+  padding-left: .625rem;
+  height: 1.5625rem;
+  width: 80%;
+  max-width: 350px;
+  min-width: 150px;
+  border: none;
+  border-radius: .625rem;
+  font-size: .875rem;
+  background-color: #ffffff;
+  outline: none;
+}
+
+.boton-buscar {
+  padding: .375rem .625rem;
+  background-color: rgb(219, 210, 193);
+  color: black;
+  border: none;
+  border-radius: .375rem;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.boton-buscar:hover {
+  background-color: rgb(167, 125, 249);
+}
+
+.titulo-principal {
+  gap: 1.5625rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.titulo-principal a {
+  font-family: 'Irish Grover';
+  font-size: clamp(2rem, 5vw, 4rem);
+  color: rgb(219, 210, 193);
+  text-decoration: none;
+}
+
+h1:hover {
+  color: rgb(167, 125, 249);
+  transition: color 0.5s;
+}
+
+.carrito {
+  width: 5vw;
+  height: auto;
+  align-self: flex-end;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0.7rem;
+  gap: 4vw;
+  background-color: rgb(219, 210, 193);
+  border-radius: 1rem;
+}
+
+.menu-bar li a {
+  font-family: 'Griffy';
+  text-decoration: none;
+  font-size: clamp(1.2rem, 4vw, 2.5rem);
+  color: #000;
+  transition: color 0.3s;
+}
+
+.menu-bar li a:hover {
+  color: rgb(167, 125, 249);
+}
+
+.subtitulo-principal {
+  font-family: 'Griffy';
+  text-align: center;
+  font-size: clamp(2rem, 6vw, 5rem);
+  margin-top: 2.5rem;
+}
+
+.marcas {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
+  padding: 3.125rem;
+  flex-wrap: wrap;
+}
+
+.marcas {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: repeat(3, auto);
+}
+
+.elementos {
+  display: flex;
+  justify-content: center;
+  gap: 6.25rem;
+  padding: 3.125rem;
+  flex-wrap: wrap;
+}
+
+.elementos {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto)
+}
+
+.producto {
+  text-align: center;
+  background-color: rgb(219, 210, 193);
+  padding: 2.5rem;
+  border-radius: 0.5cm;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.producto img {
+  width: 100%;
+  max-height: 15rem;
+  object-fit: contain;
+}
+
+.producto p {
+  font-size: clamp(1rem, 2.5vw, 1.2rem);
+  font-weight: bold;
+}
+
+.producto span {
+  font-size: clamp(1.2rem, 3vw, 1.7rem);
+  font-weight: bold;
+}
+
+.producto span:hover {
+  color: rgb(167, 125, 249);
+  transition: color 0.3s;
+}
+
+.producto a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: inherit
+}
+
+.producto a:hover {
+  color: rgb(167, 125, 249);
+  transition: color 0.3s;
+}
+
+.marca {
+  display: flex;
+  background-color: rgb(255, 255, 255);
+  padding: 2.5rem;
+  border-radius: 0.5cm;
+  width: 17.1875rem;
+}
+
+.marca a {
+  text-decoration: none;
+  text-decoration-line: none;
+  color: inherit
+}
+
+.marca img {
+  width: 100%;
+  object-position: center;
+}
+
+.descuento1 {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.descuento2 {
+  color: red;
+}
+
+footer {
+  background-color: rgb(127, 127, 127);
+  padding: .625rem;
+}
+
+.footbar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4rem;
+}
+
+.footbar p {
+  color: white;
+  font-family: 'Knewave';
+  font-size: clamp(1.5rem, 5vw, 3rem);
+}
+
+.logos-footer {
+  display: flex;
+  gap: 2vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.logos-footer a {
+  text-decoration: none;
+  text-decoration-line: none;
+}
+
+.logos-footer a img:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+
+@media (min-width: 481px) and (max-width: 1023px) {
+  .logo-principal {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .titulo-principal {
+    justify-content: center;
+    text-align: center;
+    flex-direction: row;
+    align-items: center;
+    order: 1;
+  }
+
+  .buscar {
+    width: 100%;
+    justify-content: center;
+    gap: 1rem;
+    order: 2;
+  }
+
+  .carrito {
+    width: 5vw;
+    align-self: flex-end;
+    order: 2;
+  }
+  .marcas {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 4rem;
+  }
+    .elementos {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+
+  .logos-footer {
+    gap: 1.5rem;
+
+  }
+
+  .logos-footer img {
+    width: 3.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  header {
+    padding: 1rem;
+  }
+
+  .logo-principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    order: 0;
+    width: 100%;
+  }
+
+
+  .buscar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+    order: 1;
+  }
+
+  .searchbar {
+    width: 100%;
+  }
+
+  .carrito {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    order: 1;
+  }
+
+  .menu-bar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .menu-bar li a {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+
+  .titulo-principal {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .titulo-principal a {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+  }
+
+  .titulo-principal img {
+    margin-top: -3rem;
+  }
+
+  .carrito img {
+    max-width: 2rem;
+  }
+
+  .subtitulo-principal {
+    font-size: clamp(1.5rem, 6vw, 2rem);
+  }
+
+  .marcas {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+
+    .elementos {
+    display: grid;
+    grid-template-columns: auto;
+    gap: 2rem;
+  }
+
+  footer {
+    padding: 2rem;
+  }
+
+  .footbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .logos-footer a img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .footbar p {
+    font-size: clamp(2rem, 6vw, 2.5rem);
+    text-align: center;
+  }
+}
