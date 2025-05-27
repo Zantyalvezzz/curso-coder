@@ -1,0 +1,39 @@
+.marcas {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto;
+    justify-content: center;
+    gap: 6.25rem;
+    padding: 3.125rem;
+
+    @include tablet {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 4rem;
+    }
+
+    @include phone {
+        display: grid;
+        grid-template-columns: auto;
+        gap: 2rem;
+    }
+
+    .marca {
+        display: flex;
+        background-color: #ffffff;
+        padding: 2.5rem;
+        border-radius: 0.5cm;
+        width: 17.1875rem;
+
+        a {
+            text-decoration: none;
+            text-decoration-line: none;
+            color: inherit
+        }
+
+        img {
+            width: 100%;
+            object-position: center;
+        }
+    }
+}

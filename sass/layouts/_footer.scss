@@ -1,0 +1,75 @@
+footer {
+    background-color: map-get($colors , foot-head);
+    padding: .625rem;
+
+    @include phone {
+        padding: 2rem;
+    }
+
+
+    .footbar {
+        justify-content: center;
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 4rem;
+
+        @include phone {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+
+        p {
+            color: white;
+            font-family: map-get($fonts , footbar-f);
+            font-size: clamp(1.5rem, 5vw, 3rem);
+
+            @include phone {
+                font-size: clamp(2rem, 6vw, 2.5rem);
+                text-align: center;
+            }
+        }
+
+
+        .logos-footer {
+            display: flex;
+            gap: 2vw;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            @include tablet {
+                gap: 1.5rem;
+            }
+
+            @include phone {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+            }
+
+
+            a {
+                text-decoration: none;
+                text-decoration-line: none;
+
+                @include tablet {
+                    width: 3.2rem;
+                }
+
+                @include phone {
+                    width: 50px;
+                    height: 50px;
+                }
+
+
+                img:hover {
+                    transform: scale(1.1);
+                    transition: 0.5s;
+                }
+            }
+        }
+    }
+}
