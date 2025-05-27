@@ -142,10 +142,7 @@ header .logo-principal .carrito {
 }
 @media (max-width: 480px) {
   header .logo-principal .carrito {
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    order: 1;
+    max-width: 2rem;
   }
 }
 @media (max-width: 480px) {
