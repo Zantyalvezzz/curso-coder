@@ -28,7 +28,6 @@ header {
             width: 100%;
         }
 
-
         .buscar {
             display: flex;
             align-items: flex-start;
@@ -117,29 +116,44 @@ header {
                     color: map-get($colors , color-principal);
                     transition: color 0.5s;
                 }
+
+                @include phone {
+                    font-size: clamp(2.5rem, 5vw, 4.5rem);
+                }
+
+                img {
+                    @include phone {
+                        margin-top: -3rem;
+                    }
+                }
             }
         }
 
         .carrito {
+            display: flex;
             width: 5vw;
             height: auto;
+            justify-content: flex-end;
             align-self: flex-end;
 
             @include tablet {
-                width: 5vw;
+                width: 10vw;
                 align-self: flex-end;
                 order: 2;
             }
 
             @include phone {
-                max-width: 2rem
+                display: flex;
+                justify-content: flex-end;
+                align-self: flex-end;
+                width: 10vw;
+                order: 1;
             }
-        }
 
-
-        a img {
-            @include phone {
-                max-width: 2rem;
+            img a {
+                @include phone {
+                    max-width: 2rem;
+                }
             }
         }
     }

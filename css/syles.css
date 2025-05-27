@@ -139,30 +139,24 @@ header .logo-principal .titulo-principal a:hover {
   }
 }
 header .logo-principal .carrito {
-  display: flex;
   width: 5vw;
   height: auto;
-  justify-content: flex-end;
   align-self: flex-end;
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   header .logo-principal .carrito {
-    width: 10vw;
+    width: 5vw;
     align-self: flex-end;
     order: 2;
   }
 }
 @media (max-width: 480px) {
   header .logo-principal .carrito {
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    width: 10vw;
-    order: 1;
+    max-width: 2rem;
   }
 }
 @media (max-width: 480px) {
-  header .logo-principal .carrito img a {
+  header .logo-principal a img {
     max-width: 2rem;
   }
 }
@@ -181,7 +175,7 @@ footer .footbar {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
 }
 @media (max-width: 480px) {
   footer .footbar {
@@ -207,7 +201,6 @@ footer .footbar .logos-footer {
   gap: 2vw;
   flex-wrap: wrap;
   justify-content: center;
-  margin-right: 1rem;
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   footer .footbar .logos-footer {
@@ -387,4 +380,4 @@ footer .footbar .logos-footer a img:hover {
   color: #a77df9;
 }
 
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=syles.css.map */
