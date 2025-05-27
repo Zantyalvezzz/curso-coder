@@ -132,18 +132,15 @@ header {
             }
 
             @include phone {
-                display: flex;
-                justify-content: flex-end;
-                width: 100%;
-                order: 1;
+                max-width: 2rem
             }
         }
 
 
-            a img {
-                @include phone {
-                    max-width: 2rem;
-                }
+        a img {
+            @include phone {
+                max-width: 2rem;
             }
         }
     }
+}
