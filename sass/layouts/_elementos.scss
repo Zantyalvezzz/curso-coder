@@ -26,13 +26,15 @@
         margin: 0 auto;
 
         a {
+            display: inline-block;
             text-decoration: none;
             text-decoration-line: none;
             color: inherit;
 
             &:hover {
                 color: map-get($colors , color-principal);
-                transition: color 0.3s;
+                transform: scale(1.05);
+                transition: color 0.5s, transform 0.5s;
             }
         }
 
@@ -45,6 +47,12 @@
         h3 {
             font-size: clamp(1rem, 2.5vw, 1.2rem);
             font-weight: bold;
+            margin-top: .9375rem;
+
+            &:hover {
+                color: map-get($colors , color-principal);
+                transition: color 0.3s;
+            }
         }
 
         span {
@@ -60,6 +68,8 @@
         .descuento1 {
             text-decoration: line-through;
             color: gray;
+            font-weight: bold;
+            font-size: 1.0625rem;
         }
 
         .descuento2 {

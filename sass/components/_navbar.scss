@@ -3,7 +3,7 @@
     justify-content: space-around;
     list-style: none;
     padding: 0.7rem;
-    gap: 4vw;
+    gap: 2vw;
     background-color: map-get($colors , color-secundario);
     border-radius: 1rem;
 
@@ -16,11 +16,12 @@
 
 
     li a {
+        display: inline-block;
         font-family: map-get($fonts , subtitulo-nav-f);
         text-decoration: none;
         font-size: clamp(1.2rem, 4vw, 2.5rem);
         color: black;
-        transition: color 0.3s;
+        transition: color 0.3s, transform 0.5s;
 
         @include phone {
             font-size: clamp(1.2rem, 5vw, 2rem);
@@ -29,6 +30,7 @@
 
         &:hover {
             color: map-get($colors , color-principal);
+            transform: scale(1.1);
         }
     }
 }

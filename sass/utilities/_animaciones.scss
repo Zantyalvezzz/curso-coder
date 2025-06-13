@@ -1,0 +1,25 @@
+h2{
+    animation: subtprincipal 7s ease infinite;
+    transition: 1s;
+    }
+
+
+
+@keyframes subtprincipal {
+    
+    25%{ color: map-get($colors , color-principal);;
+
+    }
+
+    50%{
+        color: black;
+    }
+
+    75%{
+        color:  map-get($colors , color-principal);
+    }
+
+    100%{
+        color: black;
+    }
+}

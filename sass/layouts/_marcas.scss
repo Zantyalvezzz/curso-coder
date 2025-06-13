@@ -26,14 +26,21 @@
         width: 17.1875rem;
 
         a {
+            display: inline-block;
             text-decoration: none;
             text-decoration-line: none;
-            color: inherit
+            color: inherit;
+
+                &:hover{
+                transform: scale(1.1);
+                transition: 0.5s;
+            }
         }
 
         img {
             width: 100%;
             object-position: center;
+            
         }
     }
 }

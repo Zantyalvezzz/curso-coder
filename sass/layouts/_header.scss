@@ -81,6 +81,8 @@ header {
 
                 &:hover {
                     background-color: map-get($colors , color-principal);
+                    transition: color 0.5s, transform 0.5s;
+                    transform: scale(1.05);
                 }
             }
         }
@@ -114,7 +116,8 @@ header {
 
                 &:hover {
                     color: map-get($colors , color-principal);
-                    transition: color 0.5s;
+                    transition: color 0.5s, transform 0.5s;
+                    transform: scale(1.05);
                 }
 
                 @include phone {
@@ -148,6 +151,11 @@ header {
                 align-self: flex-end;
                 width: 10vw;
                 order: 1;
+            }
+
+            &:hover {
+                transition: transform 0.5s;
+                transform: scale(1.05);
             }
 
             img a {
