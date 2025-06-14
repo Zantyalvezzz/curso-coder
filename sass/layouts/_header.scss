@@ -120,6 +120,11 @@ header {
                     transform: scale(1.05);
                 }
 
+                @include tablet {
+                font-size: clamp(3.5rem, 5vw, 4rem)
+            }
+
+
                 @include phone {
                     font-size: clamp(2.5rem, 5vw, 4.5rem);
                 }
@@ -140,7 +145,7 @@ header {
             align-self: flex-end;
 
             @include tablet {
-                width: 10vw;
+                width: 6vw;
                 align-self: flex-end;
                 order: 2;
             }

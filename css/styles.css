@@ -150,6 +150,11 @@ header .logo-principal .titulo-principal a:hover {
   transition: color 0.5s, transform 0.5s;
   transform: scale(1.05);
 }
+@media (min-width: 481px) and (max-width: 1023px) {
+  header .logo-principal .titulo-principal a {
+    font-size: clamp(3.5rem, 5vw, 4rem);
+  }
+}
 @media (max-width: 480px) {
   header .logo-principal .titulo-principal a {
     font-size: clamp(2.5rem, 5vw, 4.5rem);
@@ -169,7 +174,7 @@ header .logo-principal .carrito {
 }
 @media (min-width: 481px) and (max-width: 1023px) {
   header .logo-principal .carrito {
-    width: 10vw;
+    width: 6vw;
     align-self: flex-end;
     order: 2;
   }
