@@ -275,7 +275,7 @@ footer .footbar .logos-footer a img:hover {
 }
 @media (max-width: 480px) {
   .subtitulo-principal {
-    font-size: clamp(1.5rem, 6vw, 2rem);
+    font-size: clamp(2rem, 7vw, 2.5rem);
   }
 }
 
@@ -392,6 +392,7 @@ footer .footbar .logos-footer a img:hover {
 .marcas .marca img {
   width: 100%;
   object-position: center;
+  overflow: hidden;
 }
 
 .menu-bar {
